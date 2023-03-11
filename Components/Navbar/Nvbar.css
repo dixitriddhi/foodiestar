@@ -1,0 +1,127 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #cb202d;
+  width: 100%;
+  padding: 0.3rem;
+  z-index: 900;
+  box-shadow: 0 2px 4px #750303;
+}
+.header .logo {
+  color: rgb(35, 16, 4);
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.header .logo .icon {
+  font-size: 25px;
+  color: beige;
+  transform: translateY(5px);
+}
+@media screen and (max-width: 768px) {
+  .header .navBar {
+    position: absolute;
+    background: wheat;
+    height: -moz-max-content;
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    top: -500rem;
+    left: 50%;
+    padding: 1rem;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px black;
+    transition: 0.5s ease-in-out;
+  }
+  .header .navBar .navlist {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navlist .navItem {
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navlist .navItem .navLink {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .header .navBar .navlist .navItem .navLink:hover {
+    color: antiquewhite;
+  }
+  .header .navBar .navlist .btn {
+    margin-top: 1rem;
+  }
+
+  .header .navBar .navlist .btn Link {
+    font-weight: 600;
+    color: beige;
+  }
+  .header .navBar .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: beige;
+  }
+  .header .navBar .closeNavbar:hover {
+    color: antiquewhite;
+  }
+  .header .activeNavbar {
+    top: 7rem;
+  }
+}
+.header .toggleNavbar icon {
+  font-size: 25px;
+  color: beige;
+}
+.header .toggleNavbar:hover.icon {
+  color: antiquewhite;
+}
+
+@media screen and (min-width: 769px) {
+  .toggleNavbar, .closeNavbar {
+    display: none;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .header .navBar .navlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .header .navBar .navlist .navItem .navLink {
+    color: beige;
+    padding: 0 0.45rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .header .navBar .navlist .navItem .navLink::hover {
+    color: antiquewhite;
+  }
+
+}/*# sourceMappingURL=Nvbar.css.map */
+.auth{
+
+  padding-right: 5px;
+  
+
+}
+
+.auth0{
+  background-color: rgb(170, 59, 59);
+  color: aliceblue;
+  width: 75px;
+
+}
+.auth0:hover{
+  background-color: black;
+  color: aliceblue;
+}
